@@ -31,6 +31,7 @@ def search_skills(skill):
         return 'Нет кандидата с таким навыком'
 
 
+#  загрузим словарь с данными
 file = open('candidates.json')
 dictionary = json.loads(file.read())
 file.close()
