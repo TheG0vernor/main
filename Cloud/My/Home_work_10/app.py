@@ -11,7 +11,7 @@ def main():
     @app.route('/candidates/<int:x>')
     def page_candidates(x):
         if type(utils.return_dict(x)) != dict:
-            return 'Нет такого кандидата в базе'
+            return 'Такого кандидата нет в базе'
         url = utils.return_dict(x)['picture']
         return f"<img src='{url}'>\n\n" \
                f"<pre>Имя кандидата - {utils.return_dict(x)['name']}\n" \
