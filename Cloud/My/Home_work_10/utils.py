@@ -26,7 +26,8 @@ def search_skills(skill):
             cand_skill += f"Имя кандидата - {i['name']}\n" \
                           f"Позиция кандидата - {i['position']}\n" \
                           f"Навыки - {i['skills']}\n\n"
-            return cand_skill[:-2]
+    if cand_skill != '':
+        return cand_skill[:-2]
     else:
         return 'Нет кандидата с таким навыком'
 #     для точного поиска по навыку с 26 строки:
