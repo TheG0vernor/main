@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
 <h1>Все кандидаты</h1>
-{ % for i in dictionary % }
+{% for i in dictionary %}
 <p><a href="/candidate/{{ i.id }}">{{ i.name }}</a></p>
-{ % endfor % }
+{% endfor %}

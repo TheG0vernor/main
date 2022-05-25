@@ -1,0 +1,5 @@
+<meta charset="UTF-8">
+<h1>Найдено кандидатов: {{ len_results }}</h1>
+{% for i in results_dict %}
+<p><a href="/candidate/{{ i.id }}">{{ i.name }}</a></p>
+{% endfor %}
