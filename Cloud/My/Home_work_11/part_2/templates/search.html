@@ -1,5 +1,13 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Документ</title>
+</head>
+<body>
 <h1>Найдено кандидатов: {{ len_results }}</h1>
 {% for i in results_dict %}
 <p><a href="/candidate/{{ i.id }}">{{ i.name }}</a></p>
 {% endfor %}
+</body>
+</html>

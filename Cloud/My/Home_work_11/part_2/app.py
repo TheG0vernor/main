@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')  # обозначим главную страницу со ссылками на кандидатов
 def page_index():
-    dictionary = utils.dictionary
+    dictionary = utils.dictionary()
     return render_template("list.html", dictionary=dictionary)
 
 
