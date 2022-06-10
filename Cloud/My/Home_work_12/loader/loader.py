@@ -29,5 +29,3 @@ def post_page():
 @loader_blueprint.route("/uploads/<path:path>")  # делает загруженные файлы доступными
 def static_dir(path):
     return send_from_directory("uploads", path)
-
-
